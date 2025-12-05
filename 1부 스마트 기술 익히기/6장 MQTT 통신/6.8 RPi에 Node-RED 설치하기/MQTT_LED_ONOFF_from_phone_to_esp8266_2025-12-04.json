@@ -1,0 +1,117 @@
+[
+    {
+        "id": "7ffdfa105d80cc22",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "e7a25a42d72404e7",
+        "type": "inject",
+        "z": "7ffdfa105d80cc22",
+        "name": "input ON ",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "LED",
+        "payload": "ON",
+        "payloadType": "str",
+        "x": 120,
+        "y": 720,
+        "wires": [
+            [
+                "fac374b470d1a3c9"
+            ]
+        ]
+    },
+    {
+        "id": "8bbf5b391f38734c",
+        "type": "inject",
+        "z": "7ffdfa105d80cc22",
+        "name": "input OFF",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "LED",
+        "payload": "OFF",
+        "payloadType": "str",
+        "x": 120,
+        "y": 800,
+        "wires": [
+            [
+                "fac374b470d1a3c9"
+            ]
+        ]
+    },
+    {
+        "id": "fac374b470d1a3c9",
+        "type": "mqtt out",
+        "z": "7ffdfa105d80cc22",
+        "name": "send LED ON/OFF",
+        "topic": "LED",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "145f9ed5a649d28a",
+        "x": 430,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "145f9ed5a649d28a",
+        "type": "mqtt-broker",
+        "name": "RPi MQTT",
+        "broker": "localhost",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    }
+]
