@@ -1,6 +1,6 @@
 // 무선 공유기(AP,엑세스 포인트)의 이름과 비밀번호
-#define AP_SSID1  "iptime_PYK"
-#define AP_PASS1  "gondwana@04"
+#define AP_SSID1  "***" // 자신의 환경에 맞게 입력한다.
+#define AP_PASS1  "***" // 자신의 환경에 맞게 입력한다.
 
 #define AP_SSID2  ""  // 없으면 ""
 #define AP_PASS2  ""  // 없으면 ""
