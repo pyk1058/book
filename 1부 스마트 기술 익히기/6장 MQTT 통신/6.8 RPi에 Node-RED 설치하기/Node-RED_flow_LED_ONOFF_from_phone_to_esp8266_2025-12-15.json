@@ -1,0 +1,63 @@
+[
+    {
+        "id": "9fe9987707add98c",
+        "type": "ui_switch",
+        "z": "7ffdfa105d80cc22",
+        "name": "",
+        "label": "LED switch",
+        "tooltip": "",
+        "group": "ab0ae15640185ad3",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "ON",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "OFF",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 190,
+        "y": 760,
+        "wires": [
+            [
+                "fac374b470d1a3c9"
+            ]
+        ]
+    },
+    {
+        "id": "ab0ae15640185ad3",
+        "type": "ui_group",
+        "name": "MQTT",
+        "tab": "8b5f5c4fdc686091",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "8b5f5c4fdc686091",
+        "type": "ui_tab",
+        "name": "LED",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "85a112bd3c9c045c",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "node-red-dashboard": "3.6.6"
+        }
+    }
+]
