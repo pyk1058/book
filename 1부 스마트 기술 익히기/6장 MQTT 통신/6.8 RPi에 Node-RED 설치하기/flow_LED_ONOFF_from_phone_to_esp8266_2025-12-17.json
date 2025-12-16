@@ -1,0 +1,120 @@
+[
+    {
+        "id": "32bf6ee202074cac",
+        "type": "tab",
+        "label": "플로우 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "ceb171b791b38cdc",
+        "type": "ui_switch",
+        "z": "32bf6ee202074cac",
+        "name": "LED switch",
+        "label": "switch",
+        "tooltip": "",
+        "group": "ab0ae15640185ad3",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "ON",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "OFF",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 190,
+        "y": 140,
+        "wires": [
+            [
+                "f56ee8bca98f9565"
+            ]
+        ]
+    },
+    {
+        "id": "f56ee8bca98f9565",
+        "type": "mqtt out",
+        "z": "32bf6ee202074cac",
+        "name": "MQTT out",
+        "topic": "LED",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "145f9ed5a649d28a",
+        "x": 480,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "ab0ae15640185ad3",
+        "type": "ui_group",
+        "name": "MQTT",
+        "tab": "8b5f5c4fdc686091",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "145f9ed5a649d28a",
+        "type": "mqtt-broker",
+        "name": "RPi MQTT",
+        "broker": "localhost",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "8b5f5c4fdc686091",
+        "type": "ui_tab",
+        "name": "LED",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "83deccd7bd1c4358",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "node-red-dashboard": "3.6.6"
+        }
+    }
+]
