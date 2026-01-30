@@ -8,8 +8,8 @@
 
 #include <ESP8266WiFi.h>
 
-char *ssid = "Younggi"; 
-char *password = "gondwana1";
+char *ssid = "AP의 이름"; 
+char *password = "AP의 암호";
 
 void setup() 
 {
