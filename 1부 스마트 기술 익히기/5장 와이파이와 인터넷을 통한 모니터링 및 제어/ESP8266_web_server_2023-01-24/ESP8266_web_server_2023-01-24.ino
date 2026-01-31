@@ -8,8 +8,8 @@
 #include <ESP8266WiFi.h>
 #include <ESP8266WebServer.h>
 
-char *ssid = "Younggi";
-char *password = "gondwana1";
+char *ssid = "AP의 이름";
+char *password = "AP의 암호";
 
 ESP8266WebServer server(80); // 웹 서버 객체
 
