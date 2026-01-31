@@ -12,8 +12,8 @@
 #define DHTPIN 4
 #define DHTTYPE DHT22
 
-char *ssid = "Younggi"; // SSID
-char *password = "gondwana1"; // password
+char *ssid = "***"; // SSID
+char *password = "***"; // password
 
 DHT dht(DHTPIN, DHTTYPE);
 ESP8266WebServer server(80); // 웹 서버의 포트를 80에 맞춘다.
