@@ -8,9 +8,9 @@
 #include <DHT.h>
 #include <ESP8266WiFi.h>
  
-String apiKey = "UZ2BD639WC4VKAIO"; // ThinSpeak의 Write API key를 넣는다.
-const char* ssid = "Younggi"; // WiFi AP 이름
-const char* password = "gondwana@02"; // WiFi 암호
+String apiKey = "***"; // ThinSpeak의 Write API key를 넣는다.
+const char* ssid = "***"; // WiFi AP 이름
+const char* password = "***"; // WiFi 암호
  
 const char* server = "api.thingspeak.com";
 #define DHTPIN 4 // D2 pin on Nodemcu // 온습도 센서의 데이터 선을 NodeMCU의 D2에 연결
