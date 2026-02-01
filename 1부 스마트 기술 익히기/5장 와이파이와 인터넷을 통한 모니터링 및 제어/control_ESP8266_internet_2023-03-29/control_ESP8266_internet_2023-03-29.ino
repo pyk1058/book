@@ -10,8 +10,8 @@
 #include <ESP8266WiFi.h>
 #include <ESP8266WebServer.h>
 
-char *ssid = "iptime_PYK";
-char *password = "gondwana@04";
+char *ssid = "***";
+char *password = "***";
 
 int LED_pin = 4; //D2
 
