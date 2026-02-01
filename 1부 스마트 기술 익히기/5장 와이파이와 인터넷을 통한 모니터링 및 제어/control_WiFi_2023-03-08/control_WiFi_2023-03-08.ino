@@ -8,8 +8,8 @@
 #include <ESP8266WiFi.h>
 #include <ESP8266WebServer.h>
 
-char *ssid = "Younggi";
-char *password = "gondwana@02";
+char *ssid = "***";
+char *password = "***";
 
 int LED_pin = 4; //D2
 
