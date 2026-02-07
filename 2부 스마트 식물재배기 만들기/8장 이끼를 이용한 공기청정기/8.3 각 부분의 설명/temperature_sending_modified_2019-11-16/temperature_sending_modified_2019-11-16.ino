@@ -5,7 +5,7 @@
 int pin = 2;
 DHT11 dht11(pin); 
 
-char *ssid = "***i";
+char *ssid = "***";
 char *password = "***";
 
 void setup()
