@@ -1,34 +1,34 @@
-/*  ¾ç¾×ÀÌ ºÎÁ·ÇÏ¸é LED°¡ ±ôºýÀÌ°í ¹öÀú°¡ ¿î´Ù.
+/*  ì–‘ì•¡ì´ ë¶€ì¡±í•˜ë©´ LEDê°€ ê¹œë¹¡ì´ê³  ë²„ì €ê°€ ìš´ë‹¤.
  *  
  *  2019.10.26
- *  ¹Ú¿µ±â
+ *  ë°•ì˜ê¸°
  */
 
-int level_sensor = 2; // ¼öÀ§¼¾¼­ÀÇ ½ÅÈ£¼±À» ¾ÆµÎÀÌ³ëÀÇ D2¿¡ ¿¬°áÇÑ´Ù.
-int buzzer = 7; // ¹öÀúÀÇ ½ÅÈ£¼±À» ¾ÆµÎÀÌ³ëÀÇ D7¿¡ ¿¬°áÇÑ´Ù.
-int LED = 11; // LEDÀÇ (+) ´ÜÀÚ¿¡ ¿¬°áµÈ ÀúÇ×À» ¾ÆµÎÀÌ³ëÀÇ D11¿¡ ¿¬°áÇÑ´Ù.
+int level_sensor = 2; // ìˆ˜ìœ„ì„¼ì„œì˜ ì‹ í˜¸ì„ ì„ ì•„ë‘ì´ë…¸ì˜ D2ì— ì—°ê²°í•œë‹¤.
+int buzzer = 7; // ë²„ì €ì˜ ì‹ í˜¸ì„ ì„ ì•„ë‘ì´ë…¸ì˜ D7ì— ì—°ê²°í•œë‹¤.
+int LED = 11; // LEDì˜ (+) ë‹¨ìžì— ì—°ê²°ëœ ì €í•­ì„ ì•„ë‘ì´ë…¸ì˜ D11ì— ì—°ê²°í•œë‹¤.
 
 void setup()
 {
-  pinMode(level_sensor, INPUT); // level_sensor ÀÔ·ÂÀ¸·Î »ç¿ëÇÑ´Ù.
-  pinMode(buzzer, OUTPUT); // buzzer´Â Ãâ·ÂÀ¸·Î »ç¿ëÇÑ´Ù.
-  pinMode(LED, OUTPUT); // LED´Â Ãâ·ÂÀ¸·Î »ç¿ëÇÑ´Ù.
+  pinMode(level_sensor, INPUT); // level_sensor ìž…ë ¥ìœ¼ë¡œ ì‚¬ìš©í•œë‹¤.
+  pinMode(buzzer, OUTPUT); // buzzerëŠ” ì¶œë ¥ìœ¼ë¡œ ì‚¬ìš©í•œë‹¤.
+  pinMode(LED, OUTPUT); // LEDëŠ” ì¶œë ¥ìœ¼ë¡œ ì‚¬ìš©í•œë‹¤.
 }
 
 void loop()
 {
   int level;
   
-  level = digitalRead(level_sensor); // ¼öÀ§¼¾¼­ÀÇ °ªÀ» ÀÐ¾î¼­ level¿¡ º¸°üÇÑ´Ù.
+  level = digitalRead(level_sensor); // ìˆ˜ìœ„ì„¼ì„œì˜ ê°’ì„ ì½ì–´ì„œ levelì— ë³´ê´€í•œë‹¤.
 
-  if (level == LOW) // levelÀÇ °ªÀÌ LOWÀÌ¸é (¼öÀ§°¡ ³·À¸¸é)
+  if (level == LOW) // levelì˜ ê°’ì´ LOWì´ë©´ (ìˆ˜ìœ„ê°€ ë‚®ìœ¼ë©´)
   {
-    digitalWrite(LED, HIGH); // LED¿¡ HIGH¸¦ °ø±ÞÇÑ´Ù. (LED¸¦ ÄÒ´Ù.)
-    tone(buzzer, 2000); // buzzer¸¦ 1kHz ÁÖÆÄ¼ö·Î ¿ï¸°´Ù.
-    delay(1000); // ±×´ë·Î 1ÃÊ¸¦ À¯ÁöÇÑ´Ù.
+    digitalWrite(LED, HIGH); // LEDì— HIGHë¥¼ ê³µê¸‰í•œë‹¤. (LEDë¥¼ ì¼ ë‹¤.)
+    tone(buzzer, 2000); // buzzerë¥¼ 2kHz ì£¼íŒŒìˆ˜ë¡œ ìš¸ë¦°ë‹¤.
+    delay(1000); // ê·¸ëŒ€ë¡œ 1ì´ˆë¥¼ ìœ ì§€í•œë‹¤.
 
-    digitalWrite(LED, LOW); // LED¿¡ LOW¸¦ °ø±ÞÇÑ´Ù. (LED¸¦ ²ö´Ù.)
-    noTone(buzzer); // buzzer¸¦ ²ö´Ù.
+    digitalWrite(LED, LOW); // LEDì— LOWë¥¼ ê³µê¸‰í•œë‹¤. (LEDë¥¼ ëˆë‹¤.)
+    noTone(buzzer); // buzzerë¥¼ ëˆë‹¤.
   }
-  delay(1000); // 1ÃÊ µ¿¾È »óÅÂ¸¦ À¯ÁöÇÑ´Ù.
-} // µÇµ¹¾Æ°£´Ù.
+  delay(1000); // 1ì´ˆ ë™ì•ˆ ìƒíƒœë¥¼ ìœ ì§€í•œë‹¤.
+} // ë˜ëŒì•„ê°„ë‹¤.
