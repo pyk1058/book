@@ -30,8 +30,8 @@
 #define clock_text_y 40 // 첫 글짜 왼쪽 아래의 y 좌표
 #define EEPROM_SIZE 80 // Memory size를 지정해준다. 단위는?
 
-const char* ssid = "iptime_PYK";     // 여기에 WiFi 네트워크 이름 입력
-const char* password = "gondwana@04"; // 여기에 WiFi 비밀번호 입력
+const char* ssid = "***";     // 여기에 WiFi 네트워크 이름 입력
+const char* password = "***"; // 여기에 WiFi 비밀번호 입력
 
 int value = 0; // dummy value
 float T, H, Ta, Ha;
